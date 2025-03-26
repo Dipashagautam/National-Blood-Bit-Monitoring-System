@@ -1,0 +1,33 @@
+package com.mycompany.parabitnbbms;
+import java.sql.ResultSet;
+import javax.swing.JOptionPane;
+import java.time.format.DateTimeFormatter;
+import java.time.LocalDateTime;
+/**
+ *
+ * @author hp
+ */
+public class BBBloodReport extends javax.swing.JDialog {
+String v,n,h,s,y,b,time1,date1;
+ParabitDB Bob2;
+ResultSet rs7;
+int q;
+    /**
+     * Creates new form BBBloodReport
+     */
+    public BBBloodReport(java.awt.Frame parent, boolean modal) {
+        super(parent, modal);
+        initComponents();
+        Bob2=new ParabitDB();
+        jcb1.setEnabled(false);
+        
+    }
+     public BBBloodReport(java.awt.Frame parent, boolean modal,int u) {
+        super(parent, modal);
+        initComponents();
+        Bob2=new ParabitDB();
+        jcb1.setEnabled(false);
+        q=u;   
+    }
+    
+    
